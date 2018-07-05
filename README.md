@@ -29,3 +29,11 @@ Two major browsers - Chrome and Safari - use the [Blink rendering engine](https:
 
 
 | Browser    | Able to retrieve true URL? | 
+
+### Caveats
+
+There have [been proposals to limit the retrieval of parent frame domains](https://github.com/whatwg/html/issues/1918) using the Referrer policy, e.g. if the parent domain has a `no-referrer` policy, the browser would stop at that parent frame and stop ascending. Specifically, [from the comment on this issue](https://github.com/whatwg/html/issues/1918#issuecomment-290303030):
+
+> the first time you hit no-referrer you append "null" and then return the list. So the any ancestors of the first ancestor that uses "no-referrer" are not revealed and the number of them is not revealed either.
+
+In this case, we return the highest-level, non-null URL, and set the `guaranteedTrueURL` to `false`.
