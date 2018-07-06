@@ -59,7 +59,7 @@ and pointing your browser to:
 
 ### Browser Support
 
-Two major browsers - Chrome and Safari - use the [Blink rendering engine](https://www.chromium.org/blink). Blink exposes a property that allows us to retrieve the tree of parent frame URLs: (`window.location.ancestorOrigins`)[https://github.com/chromium/chromium/blob/d2429f7cf43028af27e7c4e2768f556296880830/third_party/blink/renderer/core/frame/location.cc#L97].
+Two major browsers - Chrome and Safari - use the [Blink rendering engine](https://www.chromium.org/blink). Blink exposes a property that allows us to retrieve the tree of parent frame URLs: (`window.location.ancestorOrigins`)[https://github.com/chromium/chromium/blob/d2429f7cf43028af27e7c4e2768f556296880830/third\_party/blink/renderer/core/frame/location.cc#L97].
 
 ### Caveats
 
