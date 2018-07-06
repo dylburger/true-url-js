@@ -6,6 +6,7 @@ const paths = {
 };
 
 module.exports = {
+  mode: 'production',
   entry: path.join(paths.JS, 'trueUrl.js'),
   output: {
     path: paths.DIST,
