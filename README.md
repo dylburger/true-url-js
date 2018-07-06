@@ -55,6 +55,7 @@ and pointing your browser to:
 
 * Same-origin test: [`http://www.test.com:8000/test_same_origin.html`](http://www.test.com:8000/test_same_origin.html)
 * Different-origin test: [`http://www.test.com:8000/test_different_origin.html`](http://www.test.com:8000/test_different_origin.html)
+* No-Referrer test: [`http://www.test.com:8000/test_no_referrer_policy.html`](http://www.test.com:8000/test_no_referrer_policy.html)
 
 ### Browser Support
 
@@ -66,4 +67,4 @@ There have [been proposals to limit the retrieval of parent frame domains](https
 
 > the first time you hit no-referrer you append "null" and then return the list. So the any ancestors of the first ancestor that uses "no-referrer" are not revealed and the number of them is not revealed either.
 
-In this case, we return the highest-level, non-null URL, and set the `guaranteedTrueURL` to `false`.
+I cannot yet replicate this in Chrome or Safari, so we simply leave this here as a potential future caveat.
