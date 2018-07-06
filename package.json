@@ -1,0 +1,34 @@
+{
+  "name": "true-url",
+  "version": "1.0.0",
+  "description": "Retrieve the top-most URL possible from a tree of parent frames",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylburger/true-url-js.git"
+  },
+  "author": "Dylan J Sather",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dylburger/true-url-js/issues"
+  },
+  "homepage": "https://github.com/dylburger/true-url-js#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.15.1"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
